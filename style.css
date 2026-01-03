@@ -1,0 +1,198 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+.calculator {
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  border: 1px gray solid;
+  padding: 20px;
+  border-radius: 15px;
+  /* height: 70vh; */
+  /* width: 25%; */
+  background: transparent;
+}
+h1 {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+h1 span {
+  color: orange;
+  display: inline-block; /* VERY IMPORTANT for transform */
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(0.8);
+    color: rgb(6, 247, 6);
+  }
+}
+
+input {
+  width: 550px;
+  border: none;
+  padding: 20px;
+  margin: 15px 10px;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+  font-size: 50px;
+  text-align: right;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+button {
+  font-size: 35px;
+  color: white;
+  width: 120px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  /* box-shadow: 0px 20px 35px rgba(101, 49, 136, 0.1); */
+  background: transparent;
+  cursor: pointer;
+  box-shadow: -29px -24px 20px -3px rgba(14, 72, 100, 0.1);
+}
+button.special {
+  background-color: orange;
+  color: rgb(6, 247, 6);
+  /* border:1px black solid; */
+  text-align: center;
+  font-size: 30px;
+}
+/*  mobile screen */
+@media screen and (max-width: 575.98px) {
+  body {
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .calculator {
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    /* padding: 10px; */
+    border-radius: 20px;
+    height: 100vh;
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    /* border: 1px red solid; */
+    margin-top: 5px;
+  }
+  h1 span {
+    color: orange;
+    display: inline-block; /* VERY IMPORTANT for transform */
+    animation: rotate 5s linear infinite;
+  }
+
+  input {
+    width: 320px;
+    /* border: 1px red solid; */
+    padding: 8px;
+    margin: 10px 7px;
+    font-size: 27px;
+  }
+  input::placeholder {
+    color: white;
+  }
+  .pad {
+    border: 1px gray solid;
+    border-radius: 10px;
+    width: 330px;
+    display: block;
+    margin-top: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    color: white;
+    width: 58px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+   
+  }
+  button.special {
+    
+    font-size: 18px;
+  }
+}
+/* tablet screen */
+@media screen and (min-width:768px) and (max-width:991.98px){
+  body {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .calculator {
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    /* padding: 10px; */
+    border-radius: 20px;
+    height: 100vh;
+    width: 50%;
+    border: 1px gray solid;
+  }
+  h1 {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    /* border: 1px red solid; */
+    margin-top: 5px;
+  }
+  h1 span {
+    color: orange;
+    display: inline-block; /* VERY IMPORTANT for transform */
+    animation: rotate 5s linear infinite;
+  }
+
+  input {
+    width: 320px;
+    /* border: 1px red solid; */
+    padding: 8px;
+    margin: 10px 7px;
+    font-size: 27px;
+  }
+  input::placeholder {
+    color: white;
+  }
+  .pad {
+    border: 1px gray solid;
+    border-radius: 10px;
+    width: 330px;
+    display: block;
+    margin-top: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    color: white;
+    width: 58px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+   
+  }
+  button.special {
+    
+    font-size: 18px;
+  }
+}
+  
